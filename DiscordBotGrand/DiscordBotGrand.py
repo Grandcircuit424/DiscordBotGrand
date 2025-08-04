@@ -32,7 +32,7 @@ async def on_member_join(member):
         channel = bot.get_channel(1397798125044895777)
         if channel:
             await member.add_roles(role)
-            await channel.send(f'{member.author.message} Welcome to City of steel! Please read <#{RulesChannelID}> for server rules and then go to <#{CRulesChannelID}> for how to make your character!')
+            await channel.send(f'{member.mention} Welcome to City of steel! Please read <#{RulesChannelID}> for server rules and then go to <#{CRulesChannelID}> for how to make your character!')
     else:
         print("Error: Role does not exist!")
 
