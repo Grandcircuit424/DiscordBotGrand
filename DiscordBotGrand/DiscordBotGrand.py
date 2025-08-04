@@ -15,6 +15,9 @@ intents.messages = True
 intents.members = True
 intents.message_content = True
 
+#Channels
+RulesChannelID = 1401264705644793896
+CRulesChannelID = 1397800833025839175
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 @bot.event
@@ -29,7 +32,7 @@ async def on_member_join(member):
         channel = bot.get_channel(1397798125044895777)
         if channel:
             await member.add_roles(role)
-            await channel.send(f'{member.author.message} Welcome to City of steel glad you could make it!')
+            await channel.send(f'{member.author.message} Welcome to City of steel! Please read <#{RulesChannelID}> for server rules and then go to <#{CRulesChannelID}> for how to make your character!')
     else:
         print("Error: Role does not exist!")
 
