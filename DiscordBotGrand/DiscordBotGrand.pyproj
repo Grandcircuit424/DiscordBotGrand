@@ -25,8 +25,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".env" />
-    <Content Include=".gitignore" />
-    <Content Include="Discord.log" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
